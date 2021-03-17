@@ -67,7 +67,7 @@ namespace mars_rover
             internal List<string> Movements;
             internal Rover(Position current, List<string> movements)
             {
-                if (current != null || current.X >= 0 || current.Y >= 0)
+                if (current != null && current.X >= 0 && current.Y >= 0)
                     CurrentPosition = current;
                 else
                 {
